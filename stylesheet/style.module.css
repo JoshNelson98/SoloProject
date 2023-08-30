@@ -1,0 +1,21 @@
+body{
+    background-color: rgb(21, 108, 174);
+}
+
+.container {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    background-color: white;
+}
+
+.yay{
+    color: red;
+    font-size: 50px;
+}
+
+.weatherBtn {
+    color: green;
+    font-size: 35px;
+}
