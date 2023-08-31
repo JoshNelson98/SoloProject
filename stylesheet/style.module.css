@@ -1,21 +1,193 @@
-body{
+
+ @import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans:wght@700&family=Cabin&family=Oswald:wght@300&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Rubik+Iso&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500&family=Lobster+Two&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+
+  body{
     background-color: rgb(21, 108, 174);
-}
+    color: rgb(0, 0, 0);
+    /* font-family: 'Balsamiq Sans', cursive; 
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-color: blue;
+    -webkit-text-stroke-width: 2px;  */
+    font-size: 50px;
+    margin: 0px 0px 0px 0px; 
+    text-align: center;
+    /* display:flex;
+    justify-content: center; */
+    /* height: 100vh;
+    width: 100vw; */
+
+
+}  
 
 .container {
+    display:flex;
+    flex-basis:0;
+    flex-grow:1;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    gap: 20px;
+    background-image: url('https://media.tenor.com/vF6R4JjcGzsAAAAC/weather-sunnyday.gif');
+    background-repeat:no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+}
+
+.weathercontainerCloud{
     display:flex;
     flex-direction: column;
     justify-content: center;
     align-items:center;
-    background-color: white;
+    gap: 15px;
+    background-image: url('https://media.tenor.com/WhD4AWN30YkAAAAC/clouds-moving.gif');
+    background-repeat:no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+}
+
+.weathercontainerRain {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    gap: 15px;
+    background-image: url('https://i.giphy.com/media/IuVFGSQZTd6TK/giphy.webp');
+    background-repeat:no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+}
+
+.weathercontainerSun {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    gap: 15px;
+    background-image: url('https://i.pinimg.com/originals/eb/b9/46/ebb946e99e5ff654fdaf45112ddac4c7.gif');
+    background-repeat:no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+}
+.weathercontainerSnow {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    gap: 15px;
+    background-image: url('https://i.pinimg.com/originals/98/75/7b/98757b4a8f0ef7e3cfb49751e1a0efaa.gif');
+    background-repeat:no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+}
+.weathercontainerLight {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    gap: 15px;
+    background-image: url('https://gifdb.com/images/high/beautiful-patterns-of-lightning-y9876tmtpwpcmvq0.gif');
+    background-repeat:no-repeat;
+    background-size: cover;
+    min-height: 100vh;
 }
 
 .yay{
-    color: red;
-    font-size: 50px;
+    /* font-family:  'Cinzel', serif; */
+    font-family: 'Cinzel';
+    -webkit-text-fill-color: white;
+    -webkit-text-stroke-color: black;
+    -webkit-text-stroke-width: 0px;
+    font-style:italic;
+    font-weight: bold;
+    color: white;
+    font-size: 90px;
 }
 
 .weatherBtn {
-    color: green;
-    font-size: 35px;
+    font-family: 'Playfair Display';
+    /* -webkit-text-fill-color: white;
+    -webkit-text-stroke-color: black;
+    -webkit-text-stroke-width: 2px; */
+    padding-top: 7px;
+    color: black;
+    border-radius: 40px 15px;
+    font-size: 25px;
+    background-color: rgba(255, 255, 255, 0.513);
+    /* background-color: rgba(11, 64, 170, 0.77); */
+    padding-right: 20px;
+    padding-left: 20px;
+    box-shadow: 10px 10px 5px black;
+}
+
+.weatherCont {
+    text-align: center;
+    font-family: 'Playfair Display', cursive;
+    /* -webkit-text-fill-color: rgba(255, 255, 255, 0.516);
+    -webkit-text-stroke-color: rgba(255, 255, 255, 0);
+    -webkit-text-stroke-width: 2px; */
+    color:black;
+    display:flex;
+    justify-content: space-between;
+    gap: 60px;
+    font-size: 30px;
+    margin-top: 50px;
+    border: 1px transparent rgb(12, 36, 172);
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: rgba(255, 255, 255, 0.517);
+    border-radius: 40px 15px;
+}
+
+.input{
+    border-radius: 40px 40px;
+    font-size: 15px;
+    font-family: 'Playfair Display';
+    color: grey;
+    text-align: center;
+    padding-top: 4px;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+.space{
+color: white;
+background-image: url('https://images.unsplash.com/photo-1446776811953-b23d57bd21aa?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=3272&q=80');
+background-size:cover;
+height: 100vh;
+width: 100vw;
+background-repeat: no-repeat;
+image-rendering: -webkit-optimize-contrast;
+display:flex;
+align-items: flex-start;
+justify-content: center;
+
+}
+
+.spaceItem{
+    margin-top:150px;
+    font-family: 'Balsamiq Sans', cursive;
+    -webkit-text-fill-color: rgb(18, 40, 161);
+    -webkit-text-stroke-color:rgb(255, 255, 255);
+    -webkit-text-stroke-width: 3px;
+    font-size: 80px;
+}
+
+.output {
+    display: flex;
+    flex-direction: column;
+    font-size: 30px;
+    align-items:center;
+}
+
+.outputData {
+    font-family: 'Oswald';
+    font-size: 20px;
+    font-weight:bolder;
 }
