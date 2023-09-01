@@ -71,6 +71,10 @@ app.put('/api', putController.putController, async(req, res) => {
     res.send
 })
 
+app.get('/addWeather/:id', putController.apiController, (req, res) =>{
+    res.send(res.locals.weather)
+})
+
 app.listen(PORT);
 
 module.exports = app;
